@@ -91,7 +91,7 @@ export default function AboutPage() {
               </div>
               <div className="relative">
                 <img
-                  src="/placeholder-h99do.png"
+                  src="/handshake.jpg"
                   alt="GlobalTrade headquarters"
                   className="rounded-lg shadow-lg w-full h-auto"
                 />

@@ -49,14 +49,14 @@ const contactMethods = [
     icon: Phone,
     title: "Phone Support",
     description: "Speak directly with our trade experts",
-    contact: "+1 (555) 123-4567",
+    contact: "+998949227973",
     availability: "24/7 Global Support",
   },
   {
     icon: Mail,
     title: "Email Support",
     description: "Get detailed responses to your inquiries",
-    contact: "info@globaltrade.com",
+    contact: "barno_xabibullayevna@mail.ru",
     availability: "Response within 2 hours",
   },
   {

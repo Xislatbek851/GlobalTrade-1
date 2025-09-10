@@ -1,16 +1,16 @@
 export function LatestProducts() {
   const products = [
     {
-      title: "Coal",
-      image: "/coal-mining-industrial.png",
+      title: "Quartz SiO2-99,10",
+      image: "/rocks.png",
     },
     {
-      title: "Agricultural Machinery",
-      image: "/agricultural-harvesting-machinery-in-field.png",
+      title: "Kaolin AKF-78 AKS-30 AKT-10",
+      image: "/Mel.jpg",
     },
     {
-      title: "Chemicals (Industrial & Specialty)",
-      image: "/industrial-chemical-laboratory.png",
+      title: "Kvartz SiO2-99,10",
+      image: "/small rocks.png",
     },
   ]
 
@@ -33,7 +33,7 @@ export function LatestProducts() {
               key={index}
               className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
             >
-              <img src={product.image || "/placeholder.svg"} alt={product.title} className="w-full h-64 object-cover" />
+              <img src={product.image || "/placeholder.svg"} alt={product.title} className="w-full h- object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">{product.title}</h3>
               </div>

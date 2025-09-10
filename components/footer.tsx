@@ -49,11 +49,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
                 <Phone className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+998949227973</span>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                <span>info@globaltrade.com</span>
+                <span>barno_xabibullayevna@mail.ru</span>
               </div>
             </div>
           </div>

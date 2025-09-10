@@ -6,10 +6,9 @@ export function HeroSection() {
     <section className="relative h-screen overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img src="/cargo-ships-and-airplane-at-port-with-containers.png" alt="Global Trade Solutions" className="h-full w-full object-cover" />
+        <img src="/people66.jpg" alt="Global Trade Solutions" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-black/40" />
       </div>
-
       {/* Content */}
       <div className="relative z-10 flex h-full items-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
