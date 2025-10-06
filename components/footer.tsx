@@ -29,31 +29,31 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-muted/30 border-t">
+    <footer className="bg-muted/30 border-t" role="contentinfo">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2 animate-fade-in-up">
-            <Link href="/" className="flex items-center space-x-2 mb-4 hover:opacity-80 transition-opacity">
-              <Globe className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
-              <span className="text-lg sm:text-xl font-bold text-foreground">GlobalTrade</span>
+            <Link href="/" className="flex items-center space-x-2 mb-4 hover:opacity-80 transition-opacity" aria-label="GLOBARA Home">
+              <Globe className="h-6 w-6 sm:h-8 sm:w-8 text-primary" aria-hidden="true" />
+              <span className="text-lg sm:text-xl font-bold text-foreground">GLOBARA</span>
             </Link>
             <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed">
               Your trusted partner for international trade solutions, connecting businesses worldwide with reliable
-              import-export services.
+              import-export services since 2019.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
-                <MapPin className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                <span>123 Trade Center, Global City, GC 12345</span>
+                <MapPin className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" aria-hidden="true" />
+                <address className="not-italic">Miami, Florida, USA</address>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
-                <Phone className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                <span>+998949227973</span>
+                <Phone className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" aria-hidden="true" />
+                <a href="tel:+998949227973" className="hover:underline">+998 94 922 79 73</a>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
-                <Mail className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                <span>barno_xabibullayevna@mail.ru</span>
+                <Mail className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" aria-hidden="true" />
+                <a href="mailto:barno_xabibullayevna@mail.ru" className="hover:underline">barno_xabibullayevna@mail.ru</a>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@ export function Footer() {
 
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-border animate-fade-in-up animation-delay-500">
           <p className="text-center text-xs sm:text-sm text-muted-foreground">
-            © 2024 GlobalTrade Solutions. All rights reserved.
+            © {new Date().getFullYear()} GLOBARA. All rights reserved.
           </p>
         </div>
       </div>

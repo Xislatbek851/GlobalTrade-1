@@ -8,10 +8,16 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "GlobalTrade Solutions - International Import Export Services",
+  title: "GLOBARA - Global Trade & Import Export Solutions",
   description:
-    "Leading international trade company providing comprehensive import-export services worldwide. Connect with global markets through our trusted logistics and trade solutions.",
-  generator: "v0.app",
+    "GLOBARA provides comprehensive international trade solutions, connecting businesses worldwide with high-quality industrial supplies, agricultural products, and commodities. Expert import-export services from Miami to the world.",
+  keywords: "import export, international trade, global sourcing, logistics, commodities trading, agricultural products, industrial supplies, Miami trade company",
+  authors: [{ name: "GLOBARA" }],
+  openGraph: {
+    title: "GLOBARA - Global Trade & Import Export Solutions",
+    description: "Expert import-export services connecting businesses worldwide with high-quality products and reliable logistics solutions.",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
@@ -20,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={null}>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>

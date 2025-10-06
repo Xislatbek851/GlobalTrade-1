@@ -41,29 +41,29 @@ export function WhatWeDo() {
   ]
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id="services" aria-labelledby="services-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-4">
-          <div className="inline-flex items-center gap-2 text-emerald-600 text-sm font-medium">
-            <div className="w-8 h-px bg-emerald-600"></div>
-            DG IMPORT & EXPORT LLC
-            <div className="w-8 h-px bg-emerald-600"></div>
+          <div className="inline-flex items-center gap-2 text-emerald-600 text-sm font-medium" role="presentation">
+            <div className="w-8 h-px bg-emerald-600" aria-hidden="true"></div>
+            GLOBARA
+            <div className="w-8 h-px bg-emerald-600" aria-hidden="true"></div>
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">What We Do</h2>
+        <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">What We Do</h2>
 
-        <p className="text-center text-gray-600 mb-12 max-w-4xl mx-auto">
-          At our core, DG IMPORT & EXPORT LLC provides end-to-end global sourcing, import, and export solutions across a
+        <p className="text-center text-gray-600 mb-12 max-w-4xl mx-auto text-lg">
+          At our core, <strong>GLOBARA</strong> provides end-to-end global sourcing, import, and export solutions across a
           diverse range of products and sectors. We serve manufacturers, distributors, and government buyers by
           offering:
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+            <div key={index} className="text-center p-6 rounded-lg hover:shadow-lg transition-all hover:-translate-y-1">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-full mb-4">
-                <service.icon className="w-8 h-8 text-emerald-600" />
+                <service.icon className="w-8 h-8 text-emerald-600" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>

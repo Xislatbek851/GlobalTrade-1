@@ -39,25 +39,25 @@ export function LatestProducts() {
   ]
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50" id="products" aria-labelledby="products-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-4">
-          <div className="inline-flex items-center gap-2 text-emerald-600 text-sm font-medium">
-            <div className="w-8 h-px bg-emerald-600"></div>
-            DG IMPORT & EXPORT LLC
-            <div className="w-8 h-px bg-emerald-600"></div>
+          <div className="inline-flex items-center gap-2 text-emerald-600 text-sm font-medium" role="presentation">
+            <div className="w-8 h-px bg-emerald-600" aria-hidden="true"></div>
+            GLOBARA
+            <div className="w-8 h-px bg-emerald-600" aria-hidden="true"></div>
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Latest Product</h2>
+        <h2 id="products-heading" className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Our Products</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all hover:-translate-y-1"
             >
-              <img src={product.image || "/placeholder.svg"} alt={product.title} className="w-full h- object-cover" />
+              <img src={product.image || "/placeholder.svg"} alt={product.title} className="w-full h-64 object-cover" loading="lazy" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">{product.title}</h3>
               </div>

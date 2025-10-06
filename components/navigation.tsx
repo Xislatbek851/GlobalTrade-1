@@ -28,9 +28,9 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <Globe className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">Globara</span>
+          <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity" aria-label="GLOBARA Home">
+            <Globe className="h-8 w-8 text-primary" aria-hidden="true" />
+            <span className="text-xl font-bold text-foreground">GLOBARA</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -63,15 +63,15 @@ export function Navigation() {
             {/* Mobile Menu */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="md:hidden">
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-5 w-5" />
+                <Button variant="ghost" size="icon" aria-label="Open navigation menu">
+                  <Menu className="h-5 w-5" aria-hidden="true" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex items-center space-x-2 mb-8">
-                  <Globe className="h-6 w-6 text-primary" />
-                  <span className="text-lg font-bold text-foreground">GlobalTrade</span>
+                  <Globe className="h-6 w-6 text-primary" aria-hidden="true" />
+                  <span className="text-lg font-bold text-foreground">GLOBARA</span>
                 </div>
                 <nav className="flex flex-col space-y-4">
                   {navigation.map((item) => (
