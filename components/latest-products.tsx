@@ -12,6 +12,30 @@ export function LatestProducts() {
       title: "Kvartz SiO2-99,10",
       image: "/small rocks.png",
     },
+     {
+      title: "Quartz SiO2-99,10",
+      image: "/mosh.png",
+    },
+    {
+      title: "Kaolin AKF-78 AKS-30 AKT-10",
+      image: "/fasol.png",
+    },
+    {
+      title: "Kvartz SiO2-99,10",
+      image: "/loviya.png",
+    },
+     {
+      title: "Quartz SiO2-99,10",
+      image: "/yasmiq.png",
+    },
+    {
+      title: "Kaolin AKF-78 AKS-30 AKT-10",
+      image: "/bugdoy.png",
+    },
+    {
+      title: "Kvartz SiO2-99,10",
+      image: "/yer_yongoq.png",
+    },
   ]
 
   return (

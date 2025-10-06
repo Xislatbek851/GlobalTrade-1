@@ -81,7 +81,7 @@ export default function ContactPage() {
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 sm:py-32 bg-gradient-to-b from-background to-muted/20">
+        <section className="relative pt-20 sm:py-32 bg-gradient-to-b from-background to-muted/20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-4xl text-center">
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl text-balance">
@@ -91,7 +91,17 @@ export default function ContactPage() {
                 Ready to expand your global reach? Our experienced team is here to help you navigate international trade
                 with confidence. Contact us today for personalized solutions.
               </p>
+
             </div>
+            <iframe className="rounded-xl overflow-hidden h-[320px] md:h-[400px] lg:h-[500px] mt-10"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1330.5541059039238!2d69.60127993739259!3d40.84995874158649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae2d9479dc5fbb%3A0xdea3c97955e8b6de!2zUkpYMitWQzksINC_0YDQvtGB0L8uINCQ0LzQuNGA0LAg0KLQtdC80YPRgNCwIDMyLCAxMTAxMDAsINCQ0LvQvNCw0LvRi9C6LCDQotCw0YjQutC10L3RgtGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1759750104664!5m2!1sru!2s"
+              width="100%"
+              height="500"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Map"
+            />
           </div>
         </section>
 

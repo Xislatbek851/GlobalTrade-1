@@ -30,7 +30,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <Globe className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">GlobalTrade</span>
+            <span className="text-xl font-bold text-foreground">Globara</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,16 +54,7 @@ export function Navigation() {
 
           {/* Theme Toggle & Mobile Menu */}
           <div className="flex items-center space-x-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="hover:bg-muted"
-            >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
+           
 
             <Button asChild className="hidden md:flex ml-4">
               <Link href="/contact">Get Quote</Link>
