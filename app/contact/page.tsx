@@ -5,8 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Phone, Mail, Globe, MessageSquare, Clock, Shield, DollarSign, Truck, FileText, Headphones } from "lucide-react"
 
-
-
 const contactMethods = [
   {
     icon: Phone,
