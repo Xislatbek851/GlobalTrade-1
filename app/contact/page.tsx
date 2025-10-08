@@ -56,7 +56,7 @@ const faqData = [
   {
     id: "industries",
     question: "What industries do you specialize in?",
-    answer: "We serve 50+ industries including electronics, automotive, fashion, agriculture, healthcare, pharmaceuticals, and more with specialized handling requirements. Each industry receives tailored solutions and expertise.",
+    answer: "We serve 50+ industries including electronics, automotive, agriculture, pharmaceuticals, and more with specialized handling requirements. Each industry receives tailored solutions and expertise.",
     icon: Truck,
     category: "Services"
   },
