@@ -4,8 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
-  Ship,
-  Plane,
   Truck,
   FileText,
   Shield,
@@ -15,30 +13,18 @@ import {
   Globe,
   Package,
   BarChart3,
+  Download,
 } from "lucide-react"
 import Link from "next/link"
 
 const services = [
   {
-    id: "ocean",
-    icon: Ship,
-    title: "Ocean Freight",
-    description: "Cost-effective shipping solutions for large cargo volumes",
-    features: [
-      "Full Container Load (FCL)",
-      "Less than Container Load (LCL)",
-      "Door-to-door delivery",
-      "Real-time tracking",
-    ],
-    benefits: ["Up to 70% cost savings", "Eco-friendly option", "Suitable for heavy cargo", "Global port coverage"],
-  },
-  {
-    id: "air",
-    icon: Plane,
-    title: "Air Freight",
-    description: "Fast and reliable air cargo services for time-sensitive shipments",
-    features: ["Express delivery", "Temperature-controlled", "Dangerous goods handling", "Charter services"],
-    benefits: ["Fastest transit times", "High security", "Reliable schedules", "Global airport network"],
+    id: "import",
+    icon: Download,
+    title: "Import Services",
+    description: "Comprehensive import solutions for businesses looking to source products globally",
+    features: ["Global sourcing", "Supplier verification", "Quality control", "Import documentation"],
+    benefits: ["Access to global markets", "Cost-effective sourcing", "Quality assurance", "Regulatory compliance"],
   },
   {
     id: "land",
@@ -124,8 +110,8 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <Tabs defaultValue="ocean" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 lg:grid-cols-6 mb-8">
+            <Tabs defaultValue="import" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 mb-8">
                 {services.map((service) => (
                   <TabsTrigger key={service.id} value={service.id} className="flex flex-col gap-1 p-3">
                     <service.icon className="h-4 w-4" />
@@ -262,14 +248,6 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
                 <Link href="/contact">Request Quote</Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-              >
-                <Link href="/destinations">View Destinations</Link>
               </Button>
             </div>
           </div>

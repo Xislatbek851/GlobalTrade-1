@@ -2,47 +2,10 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ContactForm } from "@/components/contact-form"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { MapPin, Phone, Mail, Globe, MessageSquare } from "lucide-react"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Phone, Mail, Globe, MessageSquare, Clock, Shield, DollarSign, Truck, FileText, Headphones } from "lucide-react"
 
-const offices = [
-  {
-    city: "New York",
-    country: "United States",
-    address: "123 Trade Center, Manhattan, NY 10001",
-    phone: "+1 (555) 123-4567",
-    email: "ny@globaltrade.com",
-    timezone: "EST (UTC-5)",
-    services: ["Ocean Freight", "Air Freight", "Customs"],
-  },
-  {
-    city: "Singapore",
-    country: "Singapore",
-    address: "456 Marina Bay, Singapore 018956",
-    phone: "+65 6123 4567",
-    email: "sg@globaltrade.com",
-    timezone: "SGT (UTC+8)",
-    services: ["Ocean Freight", "Air Freight", "Warehousing"],
-  },
-  {
-    city: "London",
-    country: "United Kingdom",
-    address: "789 Canary Wharf, London E14 5AB",
-    phone: "+44 20 7123 4567",
-    email: "london@globaltrade.com",
-    timezone: "GMT (UTC+0)",
-    services: ["Ocean Freight", "Land Transport", "Documentation"],
-  },
-  {
-    city: "Dubai",
-    country: "United Arab Emirates",
-    address: "321 DIFC, Dubai, UAE",
-    phone: "+971 4 123 4567",
-    email: "dubai@globaltrade.com",
-    timezone: "GST (UTC+4)",
-    services: ["Ocean Freight", "Air Freight", "Re-export"],
-  },
-]
+
 
 const contactMethods = [
   {
@@ -73,6 +36,65 @@ const contactMethods = [
     contact: "4 Global Locations",
     availability: "Local business hours",
   },
+]
+
+const faqData = [
+  {
+    id: "quote-timing",
+    question: "How quickly can you provide a quote?",
+    answer: "We provide detailed quotes within 24 hours for standard shipments and within 48 hours for complex or specialized cargo requirements. For urgent requests, we offer express quote services with 4-hour turnaround times.",
+    icon: Clock,
+    category: "Services"
+  },
+  {
+    id: "customs-clearance",
+    question: "Do you handle customs clearance?",
+    answer: "Yes, we provide comprehensive customs clearance services and handle all necessary documentation for smooth border crossings. Our team of licensed customs brokers ensures compliance with all international trade regulations.",
+    icon: FileText,
+    category: "Services"
+  },
+  {
+    id: "industries",
+    question: "What industries do you specialize in?",
+    answer: "We serve 50+ industries including electronics, automotive, fashion, agriculture, healthcare, pharmaceuticals, and more with specialized handling requirements. Each industry receives tailored solutions and expertise.",
+    icon: Truck,
+    category: "Services"
+  },
+  {
+    id: "tracking",
+    question: "Can you track my shipment in real-time?",
+    answer: "We provide real-time tracking for all shipments with regular updates and milestone notifications throughout the journey. Our advanced tracking system integrates with GPS and IoT sensors for complete visibility.",
+    icon: Globe,
+    category: "Technology"
+  },
+  {
+    id: "insurance",
+    question: "Do you offer cargo insurance?",
+    answer: "Yes, we offer comprehensive cargo insurance options to protect your goods during transit with competitive rates and quick claims processing. Coverage includes theft, damage, and loss protection.",
+    icon: Shield,
+    category: "Protection"
+  },
+  {
+    id: "payment-terms",
+    question: "What are your payment terms?",
+    answer: "We offer flexible payment terms including credit accounts for established clients, with various payment methods accepted globally. Standard terms are 30 days, with discounts available for early payment.",
+    icon: DollarSign,
+    category: "Billing"
+  },
+  {
+    id: "support-hours",
+    question: "What are your customer support hours?",
+    answer: "Our customer support team is available 24/7 for urgent matters. Regular business support is available Monday-Friday 9AM-6PM EST, with extended hours for international clients across different time zones.",
+    icon: Headphones,
+    category: "Support"
+  },
+  {
+    id: "emergency-services",
+    question: "Do you offer emergency shipping services?",
+    answer: "Yes, we provide emergency and expedited shipping services for time-sensitive cargo. Our emergency response team can arrange same-day pickups and expedited customs clearance when needed.",
+    icon: Clock,
+    category: "Services"
+  }
 ]
 
 export default function ContactPage() {
@@ -133,7 +155,7 @@ export default function ContactPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
-              <div>
+              <div id="contact-form">
                 <div className="mb-8">
                   <h2 className="text-3xl font-bold text-foreground mb-4">Send Us a Message</h2>
                   <p className="text-muted-foreground">
@@ -217,126 +239,107 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Office Locations */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center mb-16">
-              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-                Our Global Offices
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                With offices in major trade hubs worldwide, we provide local expertise with global reach.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {offices.map((office, index) => (
-                <Card key={office.city}>
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <CardTitle className="text-xl flex items-center gap-2">
-                          <MapPin className="h-5 w-5 text-primary" />
-                          {office.city}
-                        </CardTitle>
-                        <CardDescription>{office.country}</CardDescription>
-                      </div>
-                      <Badge variant="outline" className="text-xs">
-                        {office.timezone}
-                      </Badge>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="space-y-2 text-sm">
-                      <div className="flex items-start gap-2">
-                        <MapPin className="h-4 w-4 text-muted-foreground mt-0.5" />
-                        <span className="text-muted-foreground">{office.address}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Phone className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-muted-foreground">{office.phone}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Mail className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-muted-foreground">{office.email}</span>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-sm text-foreground mb-2">Specialized Services:</h4>
-                      <div className="flex flex-wrap gap-1">
-                        {office.services.map((service) => (
-                          <Badge key={service} variant="secondary" className="text-xs">
-                            {service}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* FAQ Section */}
-        <section className="py-20">
+        <section className="py-20 bg-gradient-to-b from-muted/20 to-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center mb-16">
-              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
+                <MessageSquare className="w-8 h-8 text-primary" />
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance mb-4">
                 Frequently Asked Questions
               </h2>
-              <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Quick answers to common questions about our services and processes.
+              <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
+                Find quick answers to common questions about our services, processes, and how we can help your business grow globally.
               </p>
             </div>
 
-            <div className="mx-auto max-w-4xl">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">How quickly can you provide a quote?</h3>
-                    <p className="text-sm text-muted-foreground">
-                      We provide detailed quotes within 24 hours for standard shipments and within 48 hours for complex
-                      or specialized cargo requirements.
-                    </p>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* FAQ Accordion - Takes 2/3 of the space */}
+              <div className="lg:col-span-2">
+                <Card className="bg-card/50 backdrop-blur-sm border-border/50 shadow-lg h-fit">
+                  <CardContent className="p-8">
+                    <Accordion type="single" collapsible className="w-full">
+                      {faqData.map((faq, index) => {
+                        const IconComponent = faq.icon
+                        return (
+                          <AccordionItem key={faq.id} value={faq.id} className="border-border/30">
+                            <AccordionTrigger className="text-left hover:no-underline group">
+                              <div className="flex items-center gap-4 w-full">
+                                <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                                  <IconComponent className="w-5 h-5 text-primary" />
+                                </div>
+                                <div className="flex-1">
+                                  <h3 className="font-semibold text-foreground text-base group-hover:text-primary transition-colors">
+                                    {faq.question}
+                                  </h3>
+                                  <span className="text-xs text-muted-foreground bg-muted/50 px-2 py-1 rounded-full">
+                                    {faq.category}
+                                  </span>
+                                </div>
+                              </div>
+                            </AccordionTrigger>
+                            <AccordionContent className="pt-4">
+                              <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0 w-10 h-10 bg-primary/5 rounded-lg flex items-center justify-center">
+                                  <IconComponent className="w-5 h-5 text-primary/70" />
+                                </div>
+                                <p className="text-muted-foreground leading-relaxed">
+                                  {faq.answer}
+                                </p>
+                              </div>
+                            </AccordionContent>
+                          </AccordionItem>
+                        )
+                      })}
+                    </Accordion>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Additional Help Section - Takes 1/3 of the space */}
+              <div className="lg:col-span-1">
+                <div className="bg-primary/5 rounded-2xl p-8 border border-primary/10 h-fit sticky top-8">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Still have questions?
+                  </h3>
+                  <p className="text-muted-foreground mb-6">
+                    Can't find what you're looking for? Our expert team is ready to provide personalized answers and solutions for your specific trade needs.
+                  </p>
+                  <div className="space-y-4">
+                    <a
+                      href="#contact-form"
+                      className="w-full inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
+                    >
+                      <MessageSquare className="w-4 h-4 mr-2" />
+                      Contact Our Experts
+                    </a>
+                    <a
+                      href="tel:+998949227973"
+                      className="w-full inline-flex items-center justify-center px-6 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium"
+                    >
+                      <Phone className="w-4 h-4 mr-2" />
+                      Call Now
+                    </a>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">Do you handle customs clearance?</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Yes, we provide comprehensive customs clearance services and handle all necessary documentation
-                      for smooth border crossings.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">What industries do you specialize in?</h3>
-                    <p className="text-sm text-muted-foreground">
-                      We serve 50+ industries including electronics, automotive, fashion, agriculture, healthcare, and
-                      more with specialized handling requirements.
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">Can you track my shipment in real-time?</h3>
-                    <p className="text-sm text-muted-foreground">
-                      We provide real-time tracking for all shipments with regular updates and milestone notifications
-                      throughout the journey.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">Do you offer cargo insurance?</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Yes, we offer comprehensive cargo insurance options to protect your goods during transit with
-                      competitive rates and quick claims processing.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">What are your payment terms?</h3>
-                    <p className="text-sm text-muted-foreground">
-                      We offer flexible payment terms including credit accounts for established clients, with various
-                      payment methods accepted globally.
-                    </p>
+
+                  {/* Quick Stats */}
+                  <div className="mt-8 pt-6 border-t border-border/50">
+                    <h4 className="font-semibold text-foreground mb-4">Quick Response</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-muted-foreground">Email Response</span>
+                        <span className="text-sm font-medium text-primary">2 hours</span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-muted-foreground">Quote Delivery</span>
+                        <span className="text-sm font-medium text-primary">24 hours</span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-muted-foreground">Phone Support</span>
+                        <span className="text-sm font-medium text-primary">24/7</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

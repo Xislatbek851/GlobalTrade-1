@@ -13,7 +13,6 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Destinations", href: "/destinations" },
   { name: "Testimonials", href: "/testimonials" },
   { name: "Contact", href: "/contact" },
 ]
@@ -54,7 +53,7 @@ export function Navigation() {
 
           {/* Theme Toggle & Mobile Menu */}
           <div className="flex items-center space-x-2">
-           
+
 
             <Button asChild className="hidden md:flex ml-4">
               <Link href="/contact">Get Quote</Link>
