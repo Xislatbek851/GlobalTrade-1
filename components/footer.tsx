@@ -9,10 +9,14 @@ const navigation = {
     { name: "News", href: "/news" },
   ],
   services: [
-    { name: "Ocean Freight", href: "/services#ocean" },
-    { name: "Air Freight", href: "/services#air" },
     { name: "Land Transport", href: "/services#land" },
     { name: "Documentation", href: "/services#docs" },
+    { name: "Insurance", href: "/services#insurance" },
+    { name: "Agricultural Machinery", href: "/services#agricultural" },
+    { name: "Electronics & Telecom", href: "/services#electronics" },
+    { name: "Industrial Machinery", href: "/services#industrial" },
+    { name: "Mining & Construction", href: "/services#mining" },
+    { name: "Textile Machinery", href: "/services#textile" },
   ],
   support: [
     { name: "Contact Us", href: "/contact" },

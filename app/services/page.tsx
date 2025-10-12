@@ -14,6 +14,15 @@ import {
   Package,
   BarChart3,
   Download,
+  Tractor,
+  Droplets,
+  Cpu,
+  Wrench,
+  Hammer,
+  Mountain,
+  Shirt,
+  Zap,
+  Sprout,
 } from "lucide-react"
 import Link from "next/link"
 
@@ -62,9 +71,54 @@ const services = [
 
 const additionalServices = [
   {
+    icon: Tractor,
+    title: "Agricultural Machinery",
+    description: "Wholesale trade of agricultural equipment and irrigation systems.",
+  },
+  {
+    icon: Droplets,
+    title: "Irrigation Equipment",
+    description: "Agricultural irrigation systems and water management solutions.",
+  },
+  {
+    icon: Cpu,
+    title: "Electronics & Telecom",
+    description: "Wholesale trade of electronic and telecommunications equipment and spare parts.",
+  },
+  {
+    icon: Wrench,
+    title: "Industrial Machinery",
+    description: "Wholesale trade of mechanical tools and industrial equipment.",
+  },
+  {
+    icon: Mountain,
+    title: "Mining & Construction",
+    description: "Equipment for mining industry and civil construction machinery.",
+  },
+  {
+    icon: Shirt,
+    title: "Textile Machinery",
+    description: "Equipment for textile, sewing, and knitting industry.",
+  },
+  {
     icon: Package,
-    title: "Packaging & Crating",
-    description: "Professional packaging services to ensure safe transit of your goods.",
+    title: "Equipment Wholesale",
+    description: "General machinery and equipment wholesale trade services.",
+  },
+  {
+    icon: Zap,
+    title: "Metals & Minerals",
+    description: "Wholesale trade of metals, metal ores, and mineral resources.",
+  },
+  {
+    icon: Hammer,
+    title: "Construction Materials",
+    description: "Wood, construction materials, and sanitary equipment wholesale.",
+  },
+  {
+    icon: Sprout,
+    title: "Raw Materials",
+    description: "Soil, kaolin, quartz, and other industrial raw materials supply.",
   },
   {
     icon: BarChart3,

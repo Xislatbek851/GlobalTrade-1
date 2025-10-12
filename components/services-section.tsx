@@ -1,19 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Truck, Ship, Plane, FileText, Shield, Headphones } from "lucide-react"
+import { Truck, FileText, Shield, Headphones, Tractor, Droplets, Cpu, Wrench, Hammer, Mountain, Shirt, Package, Zap, Sprout } from "lucide-react"
 import Link from "next/link"
 
 const services = [
-  {
-    icon: Ship,
-    title: "Ocean Freight",
-    description: "Cost-effective shipping solutions for large cargo volumes with full container and LCL options.",
-  },
-  {
-    icon: Plane,
-    title: "Air Freight",
-    description: "Fast and reliable air cargo services for time-sensitive shipments worldwide.",
-  },
   {
     icon: Truck,
     title: "Land Transport",
@@ -34,6 +24,56 @@ const services = [
     title: "24/7 Support",
     description: "Round-the-clock customer support and shipment tracking services.",
   },
+  {
+    icon: Tractor,
+    title: "Agricultural Machinery",
+    description: "Wholesale trade of agricultural equipment and irrigation systems.",
+  },
+  {
+    icon: Droplets,
+    title: "Irrigation Equipment",
+    description: "Agricultural irrigation systems and water management solutions.",
+  },
+  {
+    icon: Cpu,
+    title: "Electronics & Telecom",
+    description: "Wholesale trade of electronic and telecommunications equipment and spare parts.",
+  },
+  {
+    icon: Wrench,
+    title: "Industrial Machinery",
+    description: "Wholesale trade of mechanical tools and industrial equipment.",
+  },
+  {
+    icon: Mountain,
+    title: "Mining & Construction",
+    description: "Equipment for mining industry and civil construction machinery.",
+  },
+  {
+    icon: Shirt,
+    title: "Textile Machinery",
+    description: "Equipment for textile, sewing, and knitting industry.",
+  },
+  {
+    icon: Package,
+    title: "Equipment Wholesale",
+    description: "General machinery and equipment wholesale trade services.",
+  },
+  {
+    icon: Zap,
+    title: "Metals & Minerals",
+    description: "Wholesale trade of metals, metal ores, and mineral resources.",
+  },
+  {
+    icon: Hammer,
+    title: "Construction Materials",
+    description: "Wood, construction materials, and sanitary equipment wholesale.",
+  },
+  {
+    icon: Sprout,
+    title: "Raw Materials",
+    description: "Soil, kaolin, quartz, and other industrial raw materials supply.",
+  },
 ]
 
 export function ServicesSection() {
@@ -50,7 +90,7 @@ export function ServicesSection() {
         </div>
 
         <div className="mx-auto mt-12 sm:mt-16 max-w-7xl">
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {services.map((service, index) => (
               <Card
                 key={service.title}
