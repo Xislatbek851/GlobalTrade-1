@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -137,20 +138,11 @@ export default function ServicesPage() {
     <div className="min-h-screen">
       <Navigation />
       <main>
-        {/* Hero Section */}
-        <section className="relative py-20 sm:py-32 bg-gradient-to-b from-background to-muted/20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl text-balance">
-                Comprehensive Trade Solutions for Every Need
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty">
-                From logistics to documentation, we provide end-to-end services that make international trade simple,
-                reliable, and cost-effective for businesses of all sizes.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageHeader
+          title="Comprehensive Trade Solutions for Every Need"
+          subtitle="From logistics to documentation, we provide end-to-end services that make international trade simple, reliable, and cost-effective for businesses of all sizes."
+          variant="centered"
+        />
 
         {/* Main Services */}
         {/* <section className="py-20">

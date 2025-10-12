@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -107,23 +108,14 @@ export default function TestimonialsPage() {
     <div className="min-h-screen">
       <Navigation />
       <main>
-        {/* Hero Section */}
-        <section className="relative py-20 sm:py-32 bg-gradient-to-b from-background to-muted/20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl text-balance">
-                Trusted by Businesses Worldwide
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty">
-                Discover how companies across industries have transformed their international trade operations with our
-                comprehensive logistics solutions and expert guidance.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageHeader
+          title="Trusted by Businesses Worldwide"
+          subtitle="Discover how companies across industries have transformed their international trade operations with our comprehensive logistics solutions and expert guidance."
+          variant="centered"
+        />
 
         {/* Stats Section */}
-        <section className="py-12 bg-muted/30">
+        <section className="py-8 sm:py-12 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
@@ -140,7 +132,7 @@ export default function TestimonialsPage() {
         </section>
 
         {/* Testimonials Grid */}
-        <section className="py-20">
+        <section className="py-12 sm:py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
@@ -216,7 +208,7 @@ export default function TestimonialsPage() {
         </section>
 
         {/* Industries Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-12 sm:py-16 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
@@ -238,7 +230,7 @@ export default function TestimonialsPage() {
         </section>
 
         {/* Case Study Highlight */}
-        <section className="py-20">
+        <section className="py-12 sm:py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <Card className="max-w-4xl mx-auto bg-gradient-to-r from-primary/5 to-primary/10 border-primary/20">
               <CardHeader className="text-center pb-8">
@@ -277,7 +269,7 @@ export default function TestimonialsPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-primary text-primary-foreground">
+        <section className="py-12 sm:py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Join Our Success Stories</h2>
             <p className="text-lg mb-8 opacity-90">

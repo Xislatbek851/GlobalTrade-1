@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -54,23 +55,14 @@ export default function AboutPage() {
     <div className="min-h-screen">
       <Navigation />
       <main>
-        {/* Hero Section */}
-        <section className="relative py-20 sm:py-32 bg-gradient-to-b from-background to-muted/20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl text-balance">
-                Building Bridges in Global Trade Since 1999
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty">
-                We are a leading international trade company dedicated to connecting businesses worldwide through
-                reliable, efficient, and innovative import-export solutions.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageHeader
+          title="Building Bridges in Global Trade Since 1999"
+          subtitle="We are a leading international trade company dedicated to connecting businesses worldwide through reliable, efficient, and innovative import-export solutions."
+          variant="centered"
+        />
 
         {/* Mission & Vision */}
-        <section className="py-20">
+        <section className="py-12 sm:py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -101,7 +93,7 @@ export default function AboutPage() {
         </section>
 
         {/* Values */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-12 sm:py-16 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
@@ -131,7 +123,7 @@ export default function AboutPage() {
         </section>
 
         {/* Leadership Team */}
-        <section className="py-20" id="team">
+        <section className="py-12 sm:py-16" id="team">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
@@ -164,7 +156,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-primary text-primary-foreground">
+        <section className="py-12 sm:py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Expand Your Global Reach?</h2>
             <p className="text-lg mb-8 opacity-90">
