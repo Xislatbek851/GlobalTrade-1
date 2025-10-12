@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function LatestProducts() {
   const products = [
     {
@@ -12,7 +14,7 @@ export function LatestProducts() {
       title: "Kvartz SiO2-99,10",
       image: "/small rocks.png",
     },
-     {
+    {
       title: "Quartz SiO2-99,10",
       image: "/mosh.png",
     },
@@ -24,7 +26,7 @@ export function LatestProducts() {
       title: "Kvartz SiO2-99,10",
       image: "/loviya.png",
     },
-     {
+    {
       title: "Quartz SiO2-99,10",
       image: "/yasmiq.png",
     },
@@ -57,7 +59,7 @@ export function LatestProducts() {
               key={index}
               className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all hover:-translate-y-1"
             >
-              <img src={product.image || "/placeholder.svg"} alt={product.title} className="w-full h-64 object-cover" loading="lazy" />
+              <Image width={490} height={490} src={product.image || "/placeholder.svg"} alt={product.title} className="w-full h-auto sm:h-[490px] object-cover" loading="lazy" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">{product.title}</h3>
               </div>
