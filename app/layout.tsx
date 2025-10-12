@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     "GLOBARA provides comprehensive international trade solutions, connecting businesses worldwide with high-quality industrial supplies, agricultural products, and commodities. Expert import-export services from Miami to the world.",
   keywords: "import export, international trade, global sourcing, logistics, commodities trading, agricultural products, industrial supplies, Miami trade company",
   authors: [{ name: "GLOBARA" }],
+  icons: {
+    icon: "/logo-icon.png",
+    shortcut: "/favicon.ico",
+    apple: "/logo-icon.png",
+  },
   openGraph: {
     title: "GLOBARA - Global Trade & Import Export Solutions",
     description: "Expert import-export services connecting businesses worldwide with high-quality products and reliable logistics solutions.",

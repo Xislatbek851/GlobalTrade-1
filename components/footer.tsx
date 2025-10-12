@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Globe, Mail, Phone, MapPin } from "lucide-react"
+import { Logo } from "@/components/logo"
 
 const navigation = {
   company: [
@@ -38,9 +39,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2 animate-fade-in-up">
-            <Link href="/" className="flex items-center space-x-2 mb-4 hover:opacity-80 transition-opacity" aria-label="GLOBARA Home">
-              <Globe className="h-6 w-6 sm:h-8 sm:w-8 text-primary" aria-hidden="true" />
-              <span className="text-lg sm:text-xl font-bold text-foreground">GLOBARA</span>
+            <Link href="/" className="mb-4 hover:opacity-80 transition-opacity" aria-label="GLOBARA Home">
+              <Logo size="lg" />
             </Link>
             <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed">
               Your trusted partner for international trade solutions, connecting businesses worldwide with reliable
