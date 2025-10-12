@@ -153,7 +153,7 @@ export default function ServicesPage() {
         </section>
 
         {/* Main Services */}
-        <section className="py-20">
+        {/* <section className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
@@ -225,14 +225,14 @@ export default function ServicesPage() {
               ))}
             </Tabs>
           </div>
-        </section>
+        </section> */}
 
         {/* Additional Services */}
-        <section className="py-20 bg-muted/30">
+        <section className="pb-20 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-                Additional Services
+                Services
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
                 Specialized services to complement your trade operations and maximize efficiency.
