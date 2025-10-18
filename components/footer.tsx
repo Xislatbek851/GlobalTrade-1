@@ -49,7 +49,7 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
                 <MapPin className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" aria-hidden="true" />
-                <address className="not-italic">Miami, Florida, USA</address>
+                <address className="not-italic">Uzbekistan , </address>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
                 <Phone className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" aria-hidden="true" />

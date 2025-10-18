@@ -31,7 +31,7 @@ export function HeroSection() {
       </div>
 
       {/* Stats Overlay */}
-      <div className="absolute bottom-20 left-0 right-0 z-10">
+      {/* <div className="absolute bottom-20 left-0 right-0 z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:flex md:justify-start gap-8 md:gap-16">
             <div className="text-center">
@@ -52,7 +52,7 @@ export function HeroSection() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
