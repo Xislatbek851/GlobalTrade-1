@@ -4,31 +4,31 @@ import { Logo } from "@/components/logo"
 
 const navigation = {
   company: [
-    { name: "About Us", href: "/about" },
-    { name: "Our Team", href: "/about#team" },
-    { name: "Careers", href: "/careers" },
-    { name: "News", href: "/news" },
+    { name: "Biz haqimizda", href: "/about" },
+    { name: "Jamoamiz", href: "/about#team" },
+    { name: "Karyera", href: "/careers" },
+    { name: "Yangiliklar", href: "/news" },
   ],
   services: [
-    { name: "Land Transport", href: "/services#land" },
-    { name: "Documentation", href: "/services#docs" },
-    { name: "Insurance", href: "/services#insurance" },
-    { name: "Agricultural Machinery", href: "/services#agricultural" },
-    { name: "Electronics & Telecom", href: "/services#electronics" },
-    { name: "Industrial Machinery", href: "/services#industrial" },
-    { name: "Mining & Construction", href: "/services#mining" },
-    { name: "Textile Machinery", href: "/services#textile" },
+    { name: "Quruqlikda tashish", href: "/services#land" },
+    { name: "Hujjatlar", href: "/services#docs" },
+    { name: "Sug‘urta", href: "/services#insurance" },
+    { name: "Qishloq xo‘jaligi texnikasi", href: "/services#agricultural" },
+    { name: "Elektronika va telekommunikatsiya", href: "/services#electronics" },
+    { name: "Sanoat uskunalari", href: "/services#industrial" },
+    { name: "Konchilik va qurilish", href: "/services#mining" },
+    { name: "To‘qimachilik uskunalari", href: "/services#textile" },
   ],
   support: [
-    { name: "Contact Us", href: "/contact" },
-    { name: "Track Shipment", href: "/track" },
-    { name: "FAQ", href: "/faq" },
-    { name: "Support Center", href: "/support" },
+    { name: "Bog‘lanish", href: "/contact" },
+    { name: "Jo‘natmani kuzatish", href: "/track" },
+    { name: "Savol-javob", href: "/faq" },
+    { name: "Yordam markazi", href: "/support" },
   ],
   legal: [
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
-    { name: "Cookie Policy", href: "/cookies" },
+    { name: "Maxfiylik siyosati", href: "/privacy" },
+    { name: "Xizmat ko‘rsatish shartlari", href: "/terms" },
+    { name: "Cookie siyosati", href: "/cookies" },
   ],
 }
 
@@ -43,8 +43,7 @@ export function Footer() {
               <Logo size="lg" />
             </Link>
             <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed">
-              Your trusted partner for international trade solutions, connecting businesses worldwide with reliable
-              import-export services since 2019.
+              Xalqaro savdo yechimlarida ishonchli hamkoringiz. 2019-yildan beri bizneslarni ishonchli import-eksport xizmatlari bilan bog‘laymiz.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -64,7 +63,7 @@ export function Footer() {
 
           {/* Navigation Links */}
           <div className="animate-fade-in-up animation-delay-100">
-            <h3 className="text-sm font-semibold text-foreground mb-4">Company</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">Kompaniya</h3>
             <ul className="space-y-2">
               {navigation.company.map((item) => (
                 <li key={item.name}>
@@ -80,7 +79,7 @@ export function Footer() {
           </div>
 
           <div className="animate-fade-in-up animation-delay-200">
-            <h3 className="text-sm font-semibold text-foreground mb-4">Services</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">Xizmatlar</h3>
             <ul className="space-y-2">
               {navigation.services.map((item) => (
                 <li key={item.name}>
@@ -96,7 +95,7 @@ export function Footer() {
           </div>
 
           <div className="animate-fade-in-up animation-delay-300">
-            <h3 className="text-sm font-semibold text-foreground mb-4">Support</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">Yordam</h3>
             <ul className="space-y-2">
               {navigation.support.map((item) => (
                 <li key={item.name}>
@@ -112,7 +111,7 @@ export function Footer() {
           </div>
 
           <div className="animate-fade-in-up animation-delay-400">
-            <h3 className="text-sm font-semibold text-foreground mb-4">Legal</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">Huquqiy</h3>
             <ul className="space-y-2">
               {navigation.legal.map((item) => (
                 <li key={item.name}>
@@ -130,7 +129,7 @@ export function Footer() {
 
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-border animate-fade-in-up animation-delay-500">
           <p className="text-center text-xs sm:text-sm text-muted-foreground">
-            © {new Date().getFullYear()} GLOBARA. All rights reserved.
+            © {new Date().getFullYear()} GLOBARA. Barcha huquqlar himoyalangan.
           </p>
         </div>
       </div>

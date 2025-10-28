@@ -139,8 +139,8 @@ export default function ServicesPage() {
       <Navigation />
       <main>
         <PageHeader
-          title="Comprehensive Trade Solutions for Every Need"
-          subtitle="From logistics to documentation, we provide end-to-end services that make international trade simple, reliable, and cost-effective for businesses of all sizes."
+          title="Har qanday ehtiyoj uchun kompleks savdo yechimlari"
+          subtitle="Logistikadan hujjatlashtirishgacha — xalqaro savdoni har o‘lchamdagi bizneslar uchun sodda, ishonchli va tejamkor qiluvchi to‘liq xizmatlarni taqdim etamiz."
           variant="centered"
         />
 
@@ -224,10 +224,10 @@ export default function ServicesPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-                Services
+                Xizmatlar
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Specialized services to complement your trade operations and maximize efficiency.
+                Savdo operatsiyalaringizni to‘ldiruvchi va samaradorlikni oshiruvchi maxsus xizmatlar.
               </p>
             </div>
 
@@ -254,10 +254,10 @@ export default function ServicesPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-                How We Work
+                Qanday ishlaymiz
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Our streamlined process ensures smooth and efficient handling of your international trade needs.
+                Soddalashtirilgan jarayonlar xalqaro savdo ehtiyojlaringizni silliq va samarali bajarilishini ta’minlaydi.
               </p>
             </div>
 
@@ -265,12 +265,12 @@ export default function ServicesPage() {
               {[
                 {
                   step: "01",
-                  title: "Consultation",
-                  description: "We assess your needs and provide tailored solutions",
+                  title: "Konsultatsiya",
+                  description: "Ehtiyojlaringizni baholab, moslashtirilgan yechimlar taqdim etamiz",
                 },
-                { step: "02", title: "Planning", description: "Detailed logistics planning and route optimization" },
-                { step: "03", title: "Execution", description: "Professional handling and real-time tracking" },
-                { step: "04", title: "Delivery", description: "Safe delivery and comprehensive reporting" },
+                { step: "02", title: "Rejalashtirish", description: "Batafsil logistika rejasi va yo‘nalishni optimallashtirish" },
+                { step: "03", title: "Bajarish", description: "Professional boshqaruv va real vaqt rejimidagi kuzatuv" },
+                { step: "04", title: "Yetkazib berish", description: "Xavfsiz yetkazib berish va batafsil hisobot" },
               ].map((item, index) => (
                 <div key={item.step} className="text-center">
                   <div className="mx-auto w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mb-4">
@@ -287,13 +287,13 @@ export default function ServicesPage() {
         {/* CTA Section */}
         <section className="py-20 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+            <h2 className="text-3xl font-bold mb-4">Boshlashga tayyormisiz?</h2>
             <p className="text-lg mb-8 opacity-90">
-              Contact us today to discuss your international trade requirements and get a customized quote.
+              Bugunoq biz bilan bog‘laning — talablaringizni muhokama qilib, shaxsiylashtirilgan tijorat taklifini oling.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/contact">Request Quote</Link>
+                <Link href="/contact">Tijorat taklifi so‘rash</Link>
               </Button>
             </div>
           </div>

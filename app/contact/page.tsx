@@ -9,31 +9,31 @@ import { Phone, Mail, Globe, MessageSquare, Clock, Shield, DollarSign, Truck, Fi
 const contactMethods = [
   {
     icon: Phone,
-    title: "Phone Support",
-    description: "Speak directly with our trade experts",
+    title: "Telefon orqali qo‘llab-quvvatlash",
+    description: "Savdo bo‘yicha ekspertlarimiz bilan to‘g‘ridan-to‘g‘ri gaplashing",
     contact: "+998949227973",
-    availability: "24/7 Global Support",
+    availability: "24/7 global qo‘llab-quvvatlash",
   },
   {
     icon: Mail,
-    title: "Email Support",
-    description: "Get detailed responses to your inquiries",
+    title: "Email orqali qo‘llab-quvvatlash",
+    description: "Savollaringizga batafsil javoblar oling",
     contact: "barno_xabibullayevna@mail.ru",
-    availability: "Response within 2 hours",
+    availability: "2 soat ichida javob",
   },
   {
     icon: MessageSquare,
-    title: "Live Chat",
-    description: "Instant assistance for quick questions",
-    contact: "Available on website",
-    availability: "Mon-Fri, 9AM-6PM EST",
+    title: "Jonli chat",
+    description: "Tez-tez so‘raladigan savollar uchun darhol yordam",
+    contact: "Vebsaytda mavjud",
+    availability: "Dushanba-Juma, 9:00-18:00 (EST)",
   },
   {
     icon: Globe,
-    title: "Regional Offices",
-    description: "Local expertise in major trade hubs",
-    contact: "4 Global Locations",
-    availability: "Local business hours",
+    title: "Mintaqaviy ofislar",
+    description: "Yirik savdo markazlarida mahalliy tajriba",
+    contact: "4 global manzil",
+    availability: "Mahalliy ish vaqti",
   },
 ]
 
@@ -102,8 +102,8 @@ export default function ContactPage() {
       <Navigation />
       <main>
         <PageHeader
-          title="Get in Touch with Our Trade Experts"
-          subtitle="Ready to expand your global reach? Our experienced team is here to help you navigate international trade with confidence. Contact us today for personalized solutions."
+          title="Savdo bo‘yicha ekspertlarimiz bilan bog‘laning"
+          subtitle="Global qamrovingizni kengaytirishga tayyormisiz? Tajribali jamoamiz xalqaro savdoni ishonch bilan boshqarishingizga yordam beradi. Bugunoq biz bilan bog‘laning — shaxsiy yechimlar taqdim etamiz."
           variant="centered"
         >
           <div className="mt-10">
@@ -148,10 +148,9 @@ export default function ContactPage() {
               {/* Contact Form */}
               <div id="contact-form">
                 <div className="mb-8">
-                  <h2 className="text-3xl font-bold text-foreground mb-4">Send Us a Message</h2>
+                  <h2 className="text-3xl font-bold text-foreground mb-4">Xabar yuboring</h2>
                   <p className="text-muted-foreground">
-                    Fill out the form below and our team will get back to you within 24 hours with a customized solution
-                    for your trade needs.
+                    Quyidagi formani to‘ldiring va jamoamiz 24 soat ichida savdo ehtiyojlaringiz uchun shaxsiylashtirilgan yechim bilan sizga javob beradi.
                   </p>
                 </div>
                 <ContactForm />
@@ -160,16 +159,16 @@ export default function ContactPage() {
               {/* Contact Information */}
               <div>
                 <div className="mb-8">
-                  <h2 className="text-3xl font-bold text-foreground mb-4">Why Choose GlobalTrade?</h2>
+                  <h2 className="text-3xl font-bold text-foreground mb-4">Nega GlobalTrade?</h2>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 mt-0.5">
                         <div className="h-2 w-2 rounded-full bg-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-foreground">25+ Years Experience</h3>
+                        <h3 className="font-semibold text-foreground">25+ yillik tajriba</h3>
                         <p className="text-sm text-muted-foreground">
-                          Proven track record in international trade and logistics
+                          Xalqaro savdo va logistikada isbotlangan tajriba
                         </p>
                       </div>
                     </div>
@@ -178,8 +177,8 @@ export default function ContactPage() {
                         <div className="h-2 w-2 rounded-full bg-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-foreground">Global Network</h3>
-                        <p className="text-sm text-muted-foreground">Offices and partners in 50+ countries worldwide</p>
+                        <h3 className="font-semibold text-foreground">Global tarmoq</h3>
+                        <p className="text-sm text-muted-foreground">Dunyo bo‘ylab 50+ mamlakatda ofis va hamkorlar</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -187,9 +186,9 @@ export default function ContactPage() {
                         <div className="h-2 w-2 rounded-full bg-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-foreground">24/7 Support</h3>
+                        <h3 className="font-semibold text-foreground">24/7 qo‘llab-quvvatlash</h3>
                         <p className="text-sm text-muted-foreground">
-                          Round-the-clock assistance for all your trade needs
+                          Barcha savdo ehtiyojlaringiz uchun kun-u tun yordam
                         </p>
                       </div>
                     </div>
@@ -198,9 +197,9 @@ export default function ContactPage() {
                         <div className="h-2 w-2 rounded-full bg-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-foreground">Competitive Rates</h3>
+                        <h3 className="font-semibold text-foreground">Raqobatbardosh narxlar</h3>
                         <p className="text-sm text-muted-foreground">
-                          Cost-effective solutions without compromising quality
+                          Sifatdan voz kechmasdan tejamkor yechimlar
                         </p>
                       </div>
                     </div>
@@ -210,17 +209,17 @@ export default function ContactPage() {
                 {/* Quick Stats */}
                 <Card className="bg-primary/5 border-primary/20">
                   <CardHeader>
-                    <CardTitle className="text-lg">Quick Response Guarantee</CardTitle>
+                    <CardTitle className="text-lg">Tezkor javob kafolati</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="grid grid-cols-2 gap-4 text-center">
                       <div>
                         <div className="text-2xl font-bold text-primary">2hrs</div>
-                        <div className="text-xs text-muted-foreground">Email Response</div>
+                        <div className="text-xs text-muted-foreground">Emailga javob</div>
                       </div>
                       <div>
                         <div className="text-2xl font-bold text-primary">24hrs</div>
-                        <div className="text-xs text-muted-foreground">Quote Delivery</div>
+                        <div className="text-xs text-muted-foreground">Tijorat taklifi</div>
                       </div>
                     </div>
                   </CardContent>
@@ -238,10 +237,10 @@ export default function ContactPage() {
                 <MessageSquare className="w-8 h-8 text-primary" />
               </div>
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance mb-4">
-                Frequently Asked Questions
+                Tez-tez so‘raladigan savollar
               </h2>
               <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-                Find quick answers to common questions about our services, processes, and how we can help your business grow globally.
+                Xizmatlarimiz, jarayonlar va biznesingizni global miqyosda o‘sishiga qanday yordam berishimiz haqida tezkor javoblarni toping.
               </p>
             </div>
 
@@ -292,10 +291,10 @@ export default function ContactPage() {
               <div className="lg:col-span-1">
                 <div className="bg-primary/5 rounded-2xl p-8 border border-primary/10 h-fit sticky top-8">
                   <h3 className="text-xl font-semibold text-foreground mb-3">
-                    Still have questions?
+                    Hali ham savollaringiz bormi?
                   </h3>
                   <p className="text-muted-foreground mb-6">
-                    Can't find what you're looking for? Our expert team is ready to provide personalized answers and solutions for your specific trade needs.
+                    Qidirgan javobingiz topilmadimi? Ekspert jamoamiz sizning aniq savdo ehtiyojlaringiz uchun shaxsiy javob va yechimlar berishga tayyor.
                   </p>
                   <div className="space-y-4">
                     <a
@@ -303,31 +302,31 @@ export default function ContactPage() {
                       className="w-full inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
                     >
                       <MessageSquare className="w-4 h-4 mr-2" />
-                      Contact Our Experts
+                      Ekspertlarimiz bilan bog‘laning
                     </a>
                     <a
                       href="tel:+998949227973"
                       className="w-full inline-flex items-center justify-center px-6 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium"
                     >
                       <Phone className="w-4 h-4 mr-2" />
-                      Call Now
+                      Hoziroq qo‘ng‘iroq qiling
                     </a>
                   </div>
 
                   {/* Quick Stats */}
                   <div className="mt-8 pt-6 border-t border-border/50">
-                    <h4 className="font-semibold text-foreground mb-4">Quick Response</h4>
+                    <h4 className="font-semibold text-foreground mb-4">Tezkor javob</h4>
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
-                        <span className="text-sm text-muted-foreground">Email Response</span>
+                        <span className="text-sm text-muted-foreground">Emailga javob</span>
                         <span className="text-sm font-medium text-primary">2 hours</span>
                       </div>
                       <div className="flex items-center justify-between">
-                        <span className="text-sm text-muted-foreground">Quote Delivery</span>
+                        <span className="text-sm text-muted-foreground">Tijorat taklifi</span>
                         <span className="text-sm font-medium text-primary">24 hours</span>
                       </div>
                       <div className="flex items-center justify-between">
-                        <span className="text-sm text-muted-foreground">Phone Support</span>
+                        <span className="text-sm text-muted-foreground">Telefon qo‘llab-quvvatlash</span>
                         <span className="text-sm font-medium text-primary">24/7</span>
                       </div>
                     </div>

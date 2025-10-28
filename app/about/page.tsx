@@ -56,8 +56,8 @@ export default function AboutPage() {
       <Navigation />
       <main>
         <PageHeader
-          title="Building Bridges in Global Trade Since 1999"
-          subtitle="We are a leading international trade company dedicated to connecting businesses worldwide through reliable, efficient, and innovative import-export solutions."
+          title="1999-yildan beri global savdoda ko‘priklar quramiz"
+          subtitle="Biz butun dunyo bo‘ylab bizneslarni ishonchli, samarali va innovatsion import-eksport yechimlari orqali bog‘lashga sodiq yetakchi xalqaro savdo kompaniyasimiz."
           variant="centered"
         />
 
@@ -66,17 +66,17 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-6">Our Mission</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-6">Bizning missiyamiz</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                  To facilitate seamless international trade by providing comprehensive, reliable, and innovative
-                  import-export solutions that connect businesses across the globe. We are committed to excellence,
-                  integrity, and building lasting partnerships that drive mutual success.
+                  Butun dunyo bo‘ylab bizneslarni bog‘lovchi kompleks, ishonchli va innovatsion import-eksport yechimlari
+                  orqali xalqaro savdoni silliq qilish. Biz ustunlik, halollik va o‘zaro muvaffaqiyatni ta’minlaydigan
+                  uzoq muddatli hamkorliklarni qurishga sodiqmiz.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   {stats.map((stat, index) => (
                     <div key={stat.label} className="text-center">
                       <div className="text-2xl font-bold text-primary">{stat.value}</div>
-                      <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-sm text-muted-foreground">{stat.label}</div>
                     </div>
                   ))}
                 </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <div className="relative">
                 <img
                   src="/handshake.jpg"
-                  alt="GlobalTrade headquarters"
+                  alt="GlobalTrade bosh ofisi"
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
               </div>
@@ -97,10 +97,10 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-                Our Core Values
+                Asosiy qadriyatlarimiz
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                The principles that guide everything we do and define who we are as a company.
+                Bizning har bir amaliyotimizni boshqaradigan va kompaniyamizni belgilaydigan tamoyillar.
               </p>
             </div>
 
@@ -127,7 +127,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-                Leadership Team
+                Rahbariyat jamoasi
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
                 Meet the experienced professionals leading our global operations.
@@ -159,11 +159,11 @@ export default function AboutPage() {
         <section className="py-12 sm:py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Expand Your Global Reach?</h2>
-            <p className="text-lg mb-8 opacity-90">
-              Let's discuss how we can help your business succeed in international markets.
-            </p>
+                <p className="text-lg mb-8 opacity-90">
+                  Xalqaro bozorlarda biznesingiz muvaffaqiyatga erishishi uchun qanday yordam bera olishimizni muhokama qilaylik.
+                </p>
             <Button asChild size="lg" variant="secondary">
-              <Link href="/contact">Get in Touch</Link>
+              <Link href="/contact">Bog‘lanish</Link>
             </Button>
           </div>
         </section>

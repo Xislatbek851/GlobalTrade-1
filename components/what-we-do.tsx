@@ -4,39 +4,39 @@ export function WhatWeDo() {
   const services = [
     {
       icon: Globe,
-      title: "International Sourcing & Procurement",
+      title: "Xalqaro ta’minot va xarid",
       description:
-        "We locate the quality, cost-effective suppliers that meet your exact requirements. From agricultural to industrial goods, we ensure consistent quality and competitive pricing.",
+        "Talablaringizga mos, sifatli va maqbul narxdagi yetkazib beruvchilarni topamiz. Qishloq xo‘jaligidan sanoat mahsulotlarigacha — barqaror sifat va raqobatbardosh narxlarni kafolatlaymiz.",
     },
     {
       icon: FileText,
-      title: "Import & Export Services",
+      title: "Import va eksport xizmatlari",
       description:
-        "We handle all aspects of international trade documentation, freight booking, customs clearance, and delivery logistics. Whether you're importing raw materials or exporting finished goods, we manage the complexity for you.",
+        "Xalqaro savdo hujjatlari, yuk bron qilish, bojxona rasmiylashtiruvi va yetkazib berish logistikasining barcha jihatlarini boshqaramiz. Xomashyo importi yoki tayyor mahsulot eksporti — murakkab jarayonlarni biz yuritamiz.",
     },
     {
       icon: Users,
-      title: "Trade Compliance & Documentation",
+      title: "Savdo mosligi va hujjatlashtirish",
       description:
-        "Navigating international trade regulations can be complex. Our in-house team ensures your shipments are fully compliant with all country requirements and documentation.",
+        "Xalqaro savdo qoidalarida harakatlanish murakkab bo‘lishi mumkin. Bizning jamoa jo‘natmalaringiz barcha mamlakat talablari va hujjatlariga to‘liq mosligini ta’minlaydi.",
     },
     {
       icon: Ship,
-      title: "Bulk Commodities Trading",
+      title: "Ommaviy xomashyo savdosi",
       description:
-        "Specializing in large-volume trade of core commodities like sugar, wheat, and food, we offer flexible shipping methods (FOB, CIF, and more) with transparency with quality assurance.",
+        "Shakar, bug‘doy va oziq-ovqat kabi asosiy xomashyolarning katta hajmda savdosiga ixtisoslashganmiz. Shaffoflik va sifat kafolati bilan moslashuvchan yetkazib berish shartlari (FOB, CIF va boshqalar).",
     },
     {
       icon: Package,
-      title: "Private Label & OEM Solutions",
+      title: "Xususiy brend va OEM yechimlari",
       description:
-        "Bring your vision to life with personalized design-to-packaging and export services. We help you create custom products that meet your specifications.",
+        "Dizayndan qadoqlashgacha va eksportgacha bo‘lgan shaxsiylashtirilgan xizmatlar bilan g‘oyangizni ro‘yobga chiqaramiz. Sizning talablaringizga mos maxsus mahsulotlar yaratishda yordam beramiz.",
     },
     {
       icon: Settings,
-      title: "Supply Chain Optimization",
+      title: "Ta’minot zanjirini optimallashtirish",
       description:
-        "We streamline your supply chain processes to reduce costs and improve efficiency across all your international trade operations.",
+        "Xalqaro savdo operatsiyalaringiz bo‘ylab xarajatlarni kamaytirish va samaradorlikni oshirish uchun ta’minot zanjiri jarayonlarini soddalashtiramiz.",
     },
   ]
 
@@ -51,12 +51,10 @@ export function WhatWeDo() {
           </div>
         </div>
 
-        <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">What We Do</h2>
+        <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">Biz nima qilamiz</h2>
 
         <p className="text-center text-gray-600 mb-12 max-w-4xl mx-auto text-lg">
-          At our core, <strong>GLOBARA</strong> provides end-to-end global sourcing, import, and export solutions across a
-          diverse range of products and sectors. We serve manufacturers, distributors, and government buyers by
-          offering:
+          <strong>GLOBARA</strong> asosiy faoliyati — keng turdagi mahsulot va sohalar bo‘yicha global ta’minot, import va eksportning boshidan oxirigacha bo‘lgan yechimlarini taqdim etish. Biz ishlab chiqaruvchilar, distribyutorlar va davlat xaridorlariga quyidagilarni taklif etamiz:
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

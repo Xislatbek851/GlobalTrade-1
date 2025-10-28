@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    // Disable Lightning CSS to avoid missing native binary errors on Windows
+    optimizeCss: false,
+  },
 }
 
 export default nextConfig

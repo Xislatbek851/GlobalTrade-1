@@ -109,8 +109,8 @@ export default function TestimonialsPage() {
       <Navigation />
       <main>
         <PageHeader
-          title="Trusted by Businesses Worldwide"
-          subtitle="Discover how companies across industries have transformed their international trade operations with our comprehensive logistics solutions and expert guidance."
+          title="Dunyo bo‘ylab bizneslar ishonchi"
+          subtitle="Turli sohalardagi kompaniyalar xalqaro savdo operatsiyalarini bizning kompleks logistika yechimlari va ekspert ko‘rsatmalarimiz bilan qanday o‘zgartirganini bilib oling."
           variant="centered"
         />
 
@@ -136,10 +136,10 @@ export default function TestimonialsPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-                Client Success Stories
+                Mijozlar muvaffaqiyat hikoyalari
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Real experiences from businesses that have achieved remarkable results with our services.
+                Xizmatlarimiz orqali ajoyib natijalarga erishgan bizneslarning haqiqiy tajribalari.
               </p>
             </div>
 
@@ -190,7 +190,7 @@ export default function TestimonialsPage() {
                     </blockquote>
 
                     <div>
-                      <h4 className="font-semibold text-sm text-foreground mb-2">Key Results:</h4>
+                      <h4 className="font-semibold text-sm text-foreground mb-2">Asosiy natijalar:</h4>
                       <ul className="space-y-1">
                         {testimonial.results.map((result, i) => (
                           <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -212,10 +212,10 @@ export default function TestimonialsPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-                Industries We Serve
+                Xizmat ko‘rsatadigan tarmoqlarimiz
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Our expertise spans across diverse industries, each with unique requirements and challenges.
+                Bizning tajribamiz turli tarmoqlarga yoyilgan bo‘lib, har birining o‘ziga xos talablari va chaqiriqlari mavjud.
               </p>
             </div>
 
@@ -235,14 +235,13 @@ export default function TestimonialsPage() {
             <Card className="max-w-4xl mx-auto bg-gradient-to-r from-primary/5 to-primary/10 border-primary/20">
               <CardHeader className="text-center pb-8">
                 <Badge variant="default" className="w-fit mx-auto mb-4">
-                  Featured Case Study
+                  Tanlangan keýs-stadi
                 </Badge>
                 <CardTitle className="text-2xl sm:text-3xl text-balance">
-                  How TechFlow Industries Reduced Costs by 30%
+                  TechFlow Industries xarajatlarni 30% ga qanday kamaytirdi
                 </CardTitle>
                 <CardDescription className="text-base mt-4">
-                  A comprehensive look at how our integrated logistics solutions transformed a major electronics
-                  manufacturer's supply chain.
+                  Bizning integratsiyalashgan logistika yechimlarimiz yirik elektronika ishlab chiqaruvchisining ta’minot zanjirini qanday o‘zgartirgani haqida batafsil hikoya.
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center">
@@ -261,7 +260,7 @@ export default function TestimonialsPage() {
                   </div>
                 </div>
                 <Button asChild size="lg">
-                  <Link href="/contact">Request Your Case Study</Link>
+                  <Link href="/contact">O‘xshash keýs-stadi so‘rash</Link>
                 </Button>
               </CardContent>
             </Card>

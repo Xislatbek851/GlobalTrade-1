@@ -11,11 +11,11 @@ import { cn } from "@/lib/utils"
 import { Logo } from "@/components/logo"
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Testimonials", href: "/testimonials" },
-  { name: "Contact", href: "/contact" },
+  { name: "Bosh sahifa", href: "/" },
+  { name: "Biz haqimizda", href: "/about" },
+  { name: "Xizmatlar", href: "/services" },
+  { name: "Mijozlar fikri", href: "/testimonials" },
+  { name: "Aloqa", href: "/contact" },
 ]
 
 export function Navigation() {
@@ -56,15 +56,15 @@ export function Navigation() {
 
 
             <Button asChild className="hidden md:flex ml-4">
-              <Link href="/contact">Get Quote</Link>
+              <Link href="/contact">Tijorat taklifi</Link>
             </Button>
 
             {/* Mobile Menu */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="md:hidden">
-                <Button variant="ghost" size="icon" aria-label="Open navigation menu">
+                <Button variant="ghost" size="icon" aria-label="Navigatsiyani ochish">
                   <Menu className="h-5 w-5" aria-hidden="true" />
-                  <span className="sr-only">Open menu</span>
+                  <span className="sr-only">Menyuni ochish</span>
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
@@ -90,7 +90,7 @@ export function Navigation() {
                   <div className="pt-4 border-t">
                     <Button asChild className="w-full" size="lg">
                       <Link href="/contact" onClick={() => setIsOpen(false)}>
-                        Get Quote
+                        Tijorat taklifi
                       </Link>
                     </Button>
                   </div>

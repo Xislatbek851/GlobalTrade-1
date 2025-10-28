@@ -6,73 +6,73 @@ import Link from "next/link"
 const services = [
   {
     icon: Truck,
-    title: "Land Transport",
-    description: "Comprehensive ground transportation and cross-border trucking services.",
+    title: "Quruqlikda tashish",
+    description: "Yuklarni quruqlikda tashish va chegaraoldi yuk tashish xizmatlari.",
   },
   {
     icon: FileText,
-    title: "Documentation",
-    description: "Complete customs clearance, permits, and trade documentation handling.",
+    title: "Hujjatlar",
+    description: "Bojxona rasmiylashtiruvi, ruxsatnomalar va savdo hujjatlarini to‘liq yuritish.",
   },
   {
     icon: Shield,
-    title: "Insurance",
-    description: "Comprehensive cargo insurance and risk management solutions.",
+    title: "Sug‘urta",
+    description: "Yuklar uchun kompleks sug‘urta va xatarlarni boshqarish yechimlari.",
   },
   {
     icon: Headphones,
-    title: "24/7 Support",
-    description: "Round-the-clock customer support and shipment tracking services.",
+    title: "24/7 Qo‘llab-quvvatlash",
+    description: "Kun-u tun mijozlarni qo‘llab-quvvatlash va jo‘natmalarni kuzatish.",
   },
   {
     icon: Tractor,
-    title: "Agricultural Machinery",
-    description: "Wholesale trade of agricultural equipment and irrigation systems.",
+    title: "Qishloq xo‘jaligi texnikasi",
+    description: "Qishloq xo‘jaligi uskunalari va sug‘orish tizimlari ulgurji savdosi.",
   },
   {
     icon: Droplets,
-    title: "Irrigation Equipment",
-    description: "Agricultural irrigation systems and water management solutions.",
+    title: "Sug‘orish uskunalari",
+    description: "Qishloq xo‘jaligi sug‘orish tizimlari va suv resurslarini boshqarish.",
   },
   {
     icon: Cpu,
-    title: "Electronics & Telecom",
-    description: "Wholesale trade of electronic and telecommunications equipment and spare parts.",
+    title: "Elektronika va telekommunikatsiya",
+    description: "Elektronika va telekommunikatsiya uskunalari hamda ehtiyot qismlar ulgurji savdosi.",
   },
   {
     icon: Wrench,
-    title: "Industrial Machinery",
-    description: "Wholesale trade of mechanical tools and industrial equipment.",
+    title: "Sanoat uskunalari",
+    description: "Mexanik asbob-uskunalar va sanoat jihozlari ulgurji savdosi.",
   },
   {
     icon: Mountain,
-    title: "Mining & Construction",
-    description: "Equipment for mining industry and civil construction machinery.",
+    title: "Konchilik va qurilish",
+    description: "Konchilik sanoati va fuqarolik qurilishidagi uskunalar.",
   },
   {
     icon: Shirt,
-    title: "Textile Machinery",
-    description: "Equipment for textile, sewing, and knitting industry.",
+    title: "To‘qimachilik uskunalari",
+    description: "To‘qimachilik, tikuvchilik va trikotaj sanoati uskunalari.",
   },
   {
     icon: Package,
-    title: "Equipment Wholesale",
-    description: "General machinery and equipment wholesale trade services.",
+    title: "Uskunalar ulgurji savdosi",
+    description: "Turli mexanizmlar va jihozlarning ulgurji savdo xizmatlari.",
   },
   {
     icon: Zap,
-    title: "Metals & Minerals",
-    description: "Wholesale trade of metals, metal ores, and mineral resources.",
+    title: "Metallar va minerallar",
+    description: "Metallar, rudalar va mineral xomashyo ulgurji savdosi.",
   },
   {
     icon: Hammer,
-    title: "Construction Materials",
-    description: "Wood, construction materials, and sanitary equipment wholesale.",
+    title: "Qurilish materiallari",
+    description: "Yog‘och, qurilish materiallari va sanitariya jihozlari ulgurji savdosi.",
   },
   {
     icon: Sprout,
-    title: "Raw Materials",
-    description: "Soil, kaolin, quartz, and other industrial raw materials supply.",
+    title: "Xomashyo",
+    description: "Tuproq, kaolin, kvarts va boshqa sanoat xomashyolari yetkazib berish.",
   },
 ]
 
@@ -82,10 +82,10 @@ export function ServicesSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center animate-fade-in-up">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground text-balance">
-            Comprehensive Trade Solutions
+            Kompleks savdo yechimlari
           </h2>
           <p className="mt-4 text-base sm:text-lg text-muted-foreground text-pretty">
-            From logistics to documentation, we provide end-to-end services for seamless international trade.
+            Logistikadan hujjatlashtirishgacha — xalqaro savdoni silliq qiluvchi to‘liq xizmatlar.
           </p>
         </div>
 
@@ -115,7 +115,7 @@ export function ServicesSection() {
 
         <div className="mt-8 sm:mt-12 text-center animate-fade-in-up animation-delay-700">
           <Button asChild size="lg" className="hover-lift">
-            <Link href="/services">View All Services</Link>
+            <Link href="/services">Barcha xizmatlarni ko‘rish</Link>
           </Button>
         </div>
       </div>

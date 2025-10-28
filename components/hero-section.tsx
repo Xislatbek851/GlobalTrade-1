@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="relative h-screen overflow-hidden" aria-label="Hero section">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img src="/people66.jpg" alt="GLOBARA international business professionals collaborating on global trade solutions" className="h-full w-full object-cover" loading="eager" fetchPriority="high" />
+        <img src="/people66.jpg" alt="GLOBARA xalqaro savdo yechimlarida hamkorlik qilayotgan mutaxassislar" className="h-full w-full object-cover" loading="eager" fetchPriority="high" />
         <div className="absolute inset-0 bg-black/40" />
       </div>
       {/* Content */}
@@ -16,14 +16,14 @@ export function HeroSection() {
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
               GLOBARA
               <br />
-              <span className="text-white">Your Trusted Global Trade Partner</span>
+              <span className="text-white">Ishonchli xalqaro savdo hamkoringiz</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-white/90 text-pretty max-w-2xl">
-              Connecting businesses worldwide with high-quality products and reliable logistics solutions since 2019
+              2019-yildan beri dunyo bo‘ylab bizneslarni sifatli mahsulotlar va ishonchli logistika bilan bog‘laymiz
             </p>
             <div className="mt-8 flex items-center gap-6">
               <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 shadow-lg hover:shadow-xl transition-shadow">
-                <Link href="/contact">Get Started</Link>
+                <Link href="/contact">Boshlash</Link>
               </Button>
             </div>
           </div>
