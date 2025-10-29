@@ -12,95 +12,95 @@ const testimonials = [
   {
     id: 1,
     name: "Sarah Chen",
-    title: "Supply Chain Director",
+    title: "Ta'minot zanjiri direktori",
     company: "TechFlow Industries",
-    industry: "Electronics",
-    location: "Singapore",
+    industry: "Elektronika",
+    location: "Singapur",
     rating: 5,
     quote:
-      "GlobalTrade has been instrumental in our expansion into European markets. Their expertise in customs regulations and reliable ocean freight services have reduced our shipping costs by 30% while improving delivery times.",
-    results: ["30% cost reduction", "Faster delivery times", "Seamless customs clearance"],
+      "GlobalTrade Yevropa bozorlariga kirishimizda muhim rol o'ynadi. Bojxona qoidalaridagi tajribasi va ishonchli dengiz tashish xizmatlari yetkazib berish xarajatlarimizni 30% ga kamaytirib, yetkazish muddatlarini yaxshiladi.",
+    results: ["30% xarajatlarni kamaytirish", "Tezroq yetkazish", "Muammosiz bojxona rasmiylashtiruvi"],
   },
   {
     id: 2,
     name: "Michael Rodriguez",
-    title: "International Trade Manager",
+    title: "Xalqaro savdo menejeri",
     company: "AgriGlobal Corp",
-    industry: "Agriculture",
-    location: "Brazil",
+    industry: "Qishloq xo'jaligi",
+    location: "Braziliya",
     rating: 5,
     quote:
-      "The team at GlobalTrade understands the complexities of agricultural exports. Their temperature-controlled logistics and documentation expertise have been crucial for our perishable goods shipments to Asia.",
-    results: ["Zero spoilage incidents", "Regulatory compliance", "Market expansion"],
+      "GlobalTrade jamoasi qishloq xo'jaligi eksportining murakkabliklarini yaxshi tushunadi. Harorat nazoratli logistika va hujjatlashtirish bo'yicha tajribasi Osiyoga buziluvchan tovarlarimizni yetkazishda hal qiluvchi ahamiyatga ega bo'ldi.",
+    results: ["Buzilish holatlarisiz", "Me'yoriy muvofiqlik", "Bozorni kengaytirish"],
   },
   {
     id: 3,
     name: "Emma Thompson",
     title: "CEO",
     company: "Fashion Forward Ltd",
-    industry: "Fashion",
-    location: "United Kingdom",
+    industry: "Moda",
+    location: "Buyuk Britaniya",
     rating: 5,
     quote:
-      "Working with GlobalTrade has transformed our supply chain. Their air freight services ensure our seasonal collections reach global markets on time, and their 24/7 support gives us peace of mind.",
-    results: ["100% on-time delivery", "Global market reach", "Excellent support"],
+      "GlobalTrade bilan hamkorlik ta'minot zanjirimizni tubdan o'zgartirdi. Ularning havo tashish xizmati mavsumiy kolleksiyalarimizni global bozorlarga o'z vaqtida yetkazadi, 24/7 qo'llab-quvvatlash esa xotirjamlik beradi.",
+    results: ["100% o'z vaqtida yetkazish", "Global bozorga chiqish", "A'lo darajadagi qo'llab-quvvatlash"],
   },
   {
     id: 4,
     name: "Ahmed Hassan",
-    title: "Operations Director",
+    title: "Operatsiyalar direktori",
     company: "Middle East Motors",
-    industry: "Automotive",
+    industry: "Avtomobil sanoati",
     location: "UAE",
     rating: 5,
     quote:
-      "GlobalTrade's comprehensive logistics solutions have streamlined our automotive parts distribution across Africa and Asia. Their expertise in handling complex shipments is unmatched.",
-    results: ["Streamlined operations", "Regional expansion", "Cost optimization"],
+      "GlobalTrade'ning keng qamrovli logistika yechimlari Afrika va Osiyo bo'ylab avtomobil qismlarini tarqatish jarayonlarimizni soddalashtirdi. Murakkab jo'natmalarni boshqarishdagi tajribasi tengsiz.",
+    results: ["Soddalashtirilgan operatsiyalar", "Hududiy kengayish", "Xarajatlarni optimallashtirish"],
   },
   {
     id: 5,
     name: "Lisa Wang",
-    title: "Import Manager",
+    title: "Import bo'limi menejeri",
     company: "Pacific Pharmaceuticals",
-    industry: "Healthcare",
-    location: "Australia",
+    industry: "Sog'liqni saqlash",
+    location: "Avstraliya",
     rating: 5,
     quote:
-      "The pharmaceutical industry requires the highest standards of care and compliance. GlobalTrade's specialized handling and documentation services ensure our products reach patients safely and on time.",
-    results: ["Regulatory compliance", "Safe handling", "Timely delivery"],
+      "Farmatsevtika sohasi yuqori darajadagi sinchkovlik va muvofiqlikni talab qiladi. GlobalTrade'ning maxsus ishlov berish va hujjatlashtirish xizmatlari mahsulotlarimiz bemorlarga xavfsiz va o'z vaqtida yetib borishini ta'minlaydi.",
+    results: ["Me'yoriy muvofiqlik", "Xavfsiz ishlov berish", "O'z vaqtida yetkazish"],
   },
   {
     id: 6,
     name: "Carlos Mendoza",
-    title: "Trade Director",
+    title: "Savdo direktori",
     company: "Latin Resources Inc",
-    industry: "Mining",
-    location: "Chile",
+    industry: "Konchilik",
+    location: "Chili",
     rating: 5,
     quote:
-      "GlobalTrade's expertise in heavy cargo and bulk shipments has been invaluable for our mining operations. Their innovative solutions have reduced our logistics costs significantly.",
-    results: ["Heavy cargo expertise", "Cost reduction", "Innovative solutions"],
+      "Og'ir va yirik hajmdagi jo'natmalar bo'yicha GlobalTrade'ning tajribasi konchilik operatsiyalarimiz uchun bebaho bo'ldi. Ularning innovatsion yechimlari logistika xarajatlarimizni sezilarli darajada kamaytirdi.",
+    results: ["Og'ir yuk bo'yicha ekspertiza", "Xarajatlarni kamaytirish", "Innovatsion yechimlar"],
   },
 ]
 
 const stats = [
-  { icon: Users, label: "Happy Clients", value: "2,500+" },
-  { icon: TrendingUp, label: "Success Rate", value: "99.9%" },
-  { icon: Award, label: "Years Experience", value: "25+" },
-  { icon: Building2, label: "Industries Served", value: "50+" },
+  { icon: Users, label: "Mamnun mijozlar", value: "2,500+" },
+  { icon: TrendingUp, label: "Muvaffaqiyat darajasi", value: "99.9%" },
+  { icon: Award, label: "Tajriba (yil)", value: "25+" },
+  { icon: Building2, label: "Xizmat ko'rsatilgan tarmoqlar", value: "50+" },
 ]
 
 const industries = [
-  "Electronics",
-  "Automotive",
-  "Fashion",
-  "Agriculture",
-  "Healthcare",
-  "Mining",
-  "Chemicals",
-  "Food & Beverage",
-  "Machinery",
-  "Textiles",
+  "Elektronika",
+  "Avtomobil sanoati",
+  "Moda",
+  "Qishloq xo'jaligi",
+  "Sog'liqni saqlash",
+  "Konchilik",
+  "Kimyo",
+  "Oziq-ovqat va ichimliklar",
+  "Uskunalar",
+  "To'qimachilik",
 ]
 
 export default function TestimonialsPage() {
@@ -248,15 +248,15 @@ export default function TestimonialsPage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary mb-2">30%</div>
-                    <div className="text-sm text-muted-foreground">Cost Reduction</div>
+                  <div className="text-sm text-muted-foreground">Xarajatlarni kamaytirish</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary mb-2">50%</div>
-                    <div className="text-sm text-muted-foreground">Faster Processing</div>
+                  <div className="text-sm text-muted-foreground">Tezroq qayta ishlash</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary mb-2">15</div>
-                    <div className="text-sm text-muted-foreground">New Markets</div>
+                  <div className="text-sm text-muted-foreground">Yangi bozorlar</div>
                   </div>
                 </div>
                 <Button asChild size="lg">
@@ -270,14 +270,13 @@ export default function TestimonialsPage() {
         {/* CTA Section */}
         <section className="py-12 sm:py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold mb-4">Join Our Success Stories</h2>
+            <h2 className="text-3xl font-bold mb-4">Muvaffaqiyat hikoyalarimizga qo'shiling</h2>
             <p className="text-lg mb-8 opacity-90">
-              Ready to transform your international trade operations? Let's discuss how we can help you achieve similar
-              results.
+              Xalqaro savdo operatsiyalaringizni o'zgartirishga tayyormisiz? O'xshash natijalarga erishishingizga qanday yordam bera olishimizni muhokama qilaylik.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/contact">Start Your Journey</Link>
+                <Link href="/contact">Yo'lingizni boshlang</Link>
               </Button>
               <Button
                 asChild
@@ -285,7 +284,7 @@ export default function TestimonialsPage() {
                 variant="outline"
                 className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
               >
-                <Link href="/services">Explore Services</Link>
+                <Link href="/services">Xizmatlarni ko'rish</Link>
               </Button>
             </div>
           </div>

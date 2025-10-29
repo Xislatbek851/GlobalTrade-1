@@ -38,8 +38,8 @@ export function ContactForm() {
     setIsSubmitted(true)
 
     toast({
-      title: "Message sent successfully!",
-      description: "We'll get back to you within 24 hours with a customized quote.",
+      title: "Xabaringiz muvaffaqiyatli yuborildi!",
+      description: "24 soat ichida sizga moslashtirilgan tijorat taklifi bilan aloqaga chiqamiz.",
     })
   }
 
@@ -52,9 +52,9 @@ export function ContactForm() {
               <CheckCircle className="h-8 w-8 text-primary" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-foreground">Thank you for your inquiry!</h3>
+              <h3 className="text-lg font-semibold text-foreground">So'rovingiz uchun rahmat!</h3>
               <p className="text-muted-foreground">
-                We've received your message and will respond within 24 hours with a customized solution.
+                Xabaringizni qabul qildik va 24 soat ichida sizga moslashtirilgan yechim bilan javob beramiz.
               </p>
             </div>
             <Button
@@ -70,7 +70,7 @@ export function ContactForm() {
                 })
               }}
             >
-              Send Another Message
+              Yana xabar yuborish
             </Button>
           </div>
         </CardContent>
@@ -81,9 +81,9 @@ export function ContactForm() {
   return (
     <Card className="animate-fade-in-up hover-lift">
       <CardHeader>
-        <CardTitle>Request a Quote</CardTitle>
+        <CardTitle>Tijorat taklifi so'rash</CardTitle>
         <CardDescription>
-          Provide details about your shipping needs and we'll create a customized solution for you.
+          Jo'natma ehtiyojlaringiz tafsilotlarini kiriting — siz uchun moslashtirilgan yechim tayyorlaymiz.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -92,7 +92,7 @@ export function ContactForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
             <div className="space-y-2">
               <Label htmlFor="firstName" className="text-sm font-medium">
-                First Name *
+                Ism *
               </Label>
               <Input
                 id="firstName"
@@ -104,7 +104,7 @@ export function ContactForm() {
             </div>
             <div className="space-y-2">
               <Label htmlFor="lastName" className="text-sm font-medium">
-                Last Name *
+                Familiya *
               </Label>
               <Input
                 id="lastName"
@@ -118,7 +118,7 @@ export function ContactForm() {
 
           <div className="space-y-2">
             <Label htmlFor="phone" className="text-sm font-medium">
-              Phone Number *
+              Telefon raqam *
             </Label>
             <Input
               id="phone"
@@ -134,13 +134,13 @@ export function ContactForm() {
           {/* Message */}
           <div className="space-y-2">
             <Label htmlFor="message" className="text-sm font-medium">
-              Message *
+              Xabar *
             </Label>
             <Textarea
               id="message"
               value={formData.message}
               onChange={(e) => handleInputChange("message", e.target.value)}
-              placeholder="Please write your message here..."
+              placeholder="Xabaringizni shu yerda yozing..."
               rows={4}
               className="focus-enhanced transition-all duration-200 resize-none"
               required
@@ -152,11 +152,11 @@ export function ContactForm() {
             {isSubmitting ? (
               <>
                 <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary-foreground mr-2" />
-                Sending Message...
+                Xabar yuborilmoqda...
               </>
             ) : (
               <>
-                Send Message
+                Xabar yuborish
                 <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </>
             )}

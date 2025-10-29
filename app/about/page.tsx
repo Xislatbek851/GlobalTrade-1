@@ -10,43 +10,43 @@ import Link from "next/link"
 const values = [
   {
     icon: Target,
-    title: "Excellence",
-    description: "We strive for excellence in every aspect of our service delivery and client relationships.",
+    title: "Ustunlik",
+    description: "Xizmat ko'rsatish va mijozlar bilan munosabatlarning har bir jihatida ustunlikka intilamiz.",
   },
   {
     icon: Heart,
-    title: "Integrity",
-    description: "Trust and transparency form the foundation of all our business relationships.",
+    title: "Halollik",
+    description: "Ishonch va oshkoralik barcha biznes munosabatlarimizning asosini tashkil etadi.",
   },
   {
     icon: Globe,
-    title: "Global Reach",
-    description: "Our worldwide network enables seamless trade connections across all continents.",
+    title: "Global qamrov",
+    description: "Butun dunyo bo'ylab tarmog'imiz barcha qit'alar o'rtasida uzluksiz savdo aloqalarini ta'minlaydi.",
   },
 ]
 
 const stats = [
-  { label: "Years of Experience", value: "25+" },
-  { label: "Global Partners", value: "500+" },
-  { label: "Successful Shipments", value: "100K+" },
-  { label: "Team Members", value: "200+" },
+  { label: "Tajriba (yil)", value: "25+" },
+  { label: "Global hamkorlar", value: "500+" },
+  { label: "Muvaffaqiyatli jo'natmalar", value: "100K+" },
+  { label: "Jamoa a'zolari", value: "200+" },
 ]
 
 const team = [
   {
     name: "Sarah Johnson",
-    role: "Chief Executive Officer",
-    description: "25+ years in international trade with expertise in global logistics and strategic partnerships.",
+    role: "Bosh ijrochi direktor",
+    description: "Xalqaro savdoda 25+ yillik tajriba, global logistika va strategik hamkorlik bo'yicha ekspert.",
   },
   {
     name: "Michael Chen",
-    role: "Head of Operations",
-    description: "Expert in supply chain optimization and customs regulations across Asia-Pacific markets.",
+    role: "Operatsiyalar rahbari",
+    description: "Osiyo-Tinch okeani bozorlari bo'ylab ta'minot zanjirini optimallashtirish va bojxona qoidalari bo'yicha ekspert.",
   },
   {
     name: "Elena Rodriguez",
-    role: "Director of Business Development",
-    description: "Specializes in emerging markets and has established key partnerships across Latin America.",
+    role: "Biznesni rivojlantirish direktori",
+    description: "Rivojlanayotgan bozorlar bo'yicha ixtisoslashgan va Lotin Amerikasida muhim hamkorliklar yo'lga qo'ygan.",
   },
 ]
 
@@ -130,7 +130,7 @@ export default function AboutPage() {
                 Rahbariyat jamoasi
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Meet the experienced professionals leading our global operations.
+                Global operatsiyalarimizni boshqarayotgan tajribali mutaxassislar bilan tanishing.
               </p>
             </div>
 
@@ -158,7 +158,7 @@ export default function AboutPage() {
         {/* CTA Section */}
         <section className="py-12 sm:py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Expand Your Global Reach?</h2>
+            <h2 className="text-3xl font-bold mb-4">Global qamrovingizni kengaytirishga tayyormisiz?</h2>
                 <p className="text-lg mb-8 opacity-90">
                   Xalqaro bozorlarda biznesingiz muvaffaqiyatga erishishi uchun qanday yordam bera olishimizni muhokama qilaylik.
                 </p>

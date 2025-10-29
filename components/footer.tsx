@@ -39,7 +39,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2 animate-fade-in-up">
-            <Link href="/" className="mb-4 hover:opacity-80 transition-opacity" aria-label="GLOBARA Home">
+            <Link href="/" className="mb-4 hover:opacity-80 transition-opacity" aria-label="GLOBARA bosh sahifa">
               <Logo size="lg" />
             </Link>
             <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed">
@@ -48,7 +48,7 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
                 <MapPin className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" aria-hidden="true" />
-                <address className="not-italic">Uzbekistan , </address>
+                <address className="not-italic">O‘zbekiston</address>
               </div>
               <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
                 <Phone className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" aria-hidden="true" />

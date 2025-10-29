@@ -40,59 +40,59 @@ const contactMethods = [
 const faqData = [
   {
     id: "quote-timing",
-    question: "How quickly can you provide a quote?",
-    answer: "We provide detailed quotes within 24 hours for standard shipments and within 48 hours for complex or specialized cargo requirements. For urgent requests, we offer express quote services with 4-hour turnaround times.",
+    question: "Qanchada tijorat taklifi bera olasiz?",
+    answer: "Standart jo'natmalar uchun 24 soat ichida, murakkab yoki maxsus yuk talablari uchun esa 48 soat ichida batafsil tijorat taklifini taqdim etamiz. Shoshilinch so'rovlar uchun 4 soat ichida tezkor taklif xizmati mavjud.",
     icon: Clock,
-    category: "Services"
+    category: "Xizmatlar"
   },
   {
     id: "customs-clearance",
-    question: "Do you handle customs clearance?",
-    answer: "Yes, we provide comprehensive customs clearance services and handle all necessary documentation for smooth border crossings. Our team of licensed customs brokers ensures compliance with all international trade regulations.",
+    question: "Bojxona rasmiylashtiruvini amalga oshirasizmi?",
+    answer: "Ha, biz bojxona rasmiylashtiruvi bo'yicha to'liq xizmat ko'rsatamiz va chegaradan muammosiz o'tish uchun barcha zarur hujjatlarni yuritamiz. Litsenziyaga ega bojxona brokerlarimiz xalqaro savdo qoidalariga to'liq muvofiqlikni ta'minlaydi.",
     icon: FileText,
-    category: "Services"
+    category: "Xizmatlar"
   },
   {
     id: "industries",
-    question: "What industries do you specialize in?",
-    answer: "We serve 50+ industries including electronics, automotive, agriculture, pharmaceuticals, and more with specialized handling requirements. Each industry receives tailored solutions and expertise.",
+    question: "Qaysi sohalarga ixtisoslashgansiz?",
+    answer: "Biz 50+ tarmoqqa xizmat ko'rsatamiz: elektronika, avtomobilsozlik, qishloq xo'jaligi, farmatsevtika va boshqalar. Har bir soha uchun maxsus yechimlar va tajriba taqdim etamiz.",
     icon: Truck,
-    category: "Services"
+    category: "Xizmatlar"
   },
   {
     id: "tracking",
-    question: "Can you track my shipment in real-time?",
-    answer: "We provide real-time tracking for all shipments with regular updates and milestone notifications throughout the journey. Our advanced tracking system integrates with GPS and IoT sensors for complete visibility.",
+    question: "Jo'natmamni real vaqt rejimida kuzata olasizmi?",
+    answer: "Barcha jo'natmalar uchun real vaqt kuzatuvini taqdim etamiz, safar davomida muntazam yangilanishlar va muhim bosqichlar haqida xabarnomalar yuboriladi. Rivojlangan kuzatuv tizimimiz GPS va IoT datchiklari bilan integratsiyalashgan.",
     icon: Globe,
-    category: "Technology"
+    category: "Texnologiya"
   },
   {
     id: "insurance",
-    question: "Do you offer cargo insurance?",
-    answer: "Yes, we offer comprehensive cargo insurance options to protect your goods during transit with competitive rates and quick claims processing. Coverage includes theft, damage, and loss protection.",
+    question: "Yuk sug'urtasini taklif qilasizmi?",
+    answer: "Ha, tranzit paytida yuklaringizni himoya qilish uchun keng qamrovli sug'urta variantlarini taklif qilamiz. Tariflar raqobatbardosh, da'volar tezkor ko'rib chiqiladi. Qamrov o'g'irlik, shikastlanish va yo'qotishlarni o'z ichiga oladi.",
     icon: Shield,
-    category: "Protection"
+    category: "Himoya"
   },
   {
     id: "payment-terms",
-    question: "What are your payment terms?",
-    answer: "We offer flexible payment terms including credit accounts for established clients, with various payment methods accepted globally. Standard terms are 30 days, with discounts available for early payment.",
+    question: "To'lov shartlaringiz qanday?",
+    answer: "Biz moslashuvchan to'lov shartlarini taklif etamiz, doimiy mijozlar uchun kredit hisoblari mavjud. Turli to'lov usullari global miqyosda qabul qilinadi. Standart muddat 30 kun, erta to'lov uchun chegirmalar beriladi.",
     icon: DollarSign,
-    category: "Billing"
+    category: "Hisob-kitob"
   },
   {
     id: "support-hours",
-    question: "What are your customer support hours?",
-    answer: "Our customer support team is available 24/7 for urgent matters. Regular business support is available Monday-Friday 9AM-6PM EST, with extended hours for international clients across different time zones.",
+    question: "Qo'llab-quvvatlash xizmatining ish vaqti qanday?",
+    answer: "Shoshilinch masalalar uchun qo'llab-quvvatlash jamoamiz 24/7 ishlaydi. Oddiy ish vaqti Dushanba-Juma 9:00-18:00 (EST), xalqaro mijozlar uchun vaqt zonalariga mos kengaytirilgan soatlar mavjud.",
     icon: Headphones,
-    category: "Support"
+    category: "Qo'llab-quvvatlash"
   },
   {
     id: "emergency-services",
-    question: "Do you offer emergency shipping services?",
-    answer: "Yes, we provide emergency and expedited shipping services for time-sensitive cargo. Our emergency response team can arrange same-day pickups and expedited customs clearance when needed.",
+    question: "Shoshilinch yetkazib berish xizmatlari bormi?",
+    answer: "Ha, vaqtga sezgir yuklar uchun shoshilinch va tezlashtirilgan yetkazib berish xizmatlarini taqdim etamiz. Tezkor javob jamoamiz zarurat tug'ilganda o'sha kunning o'zida olib ketish va tezkor bojxona rasmiylashtirishni tashkil qiladi.",
     icon: Clock,
-    category: "Services"
+    category: "Xizmatlar"
   }
 ]
 
@@ -319,11 +319,11 @@ export default function ContactPage() {
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-muted-foreground">Emailga javob</span>
-                        <span className="text-sm font-medium text-primary">2 hours</span>
+                        <span className="text-sm font-medium text-primary">2 soat</span>
                       </div>
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-muted-foreground">Tijorat taklifi</span>
-                        <span className="text-sm font-medium text-primary">24 hours</span>
+                        <span className="text-sm font-medium text-primary">24 soat</span>
                       </div>
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-muted-foreground">Telefon qo‘llab-quvvatlash</span>
